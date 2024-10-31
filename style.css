@@ -455,11 +455,6 @@ body{
      .close{
           margin:0 3rem 0 3rem;
      }
-     .prev, .next{
-          position:absolute;
-          top:-16%;
-          padding: 15px 25px;
-     }
 }
 @media (max-width: 400px){
      .nav-bar{
@@ -476,7 +471,7 @@ body{
      }
      .prev, .next{
           position:absolute;
-          top:-10%;
+          top:-14%;
           padding: 15px 25px;
      }
      .prev{
