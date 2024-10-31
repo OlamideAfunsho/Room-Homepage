@@ -450,15 +450,14 @@ body{
 }
 @media (max-width: 420px){
      .title{
-          margin-left: 7rem;
-          
+          margin-left: 7rem;    
      }
      .close{
           margin:0 3rem 0 3rem;
      }
      .prev, .next{
           position:absolute;
-          top:-14%;
+          top:-12%;
           padding: 15px 25px;
      }
 }
