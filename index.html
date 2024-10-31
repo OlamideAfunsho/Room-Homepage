@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <title>Room Homepage</title>
+</head>
+<body>
+     <div class="container">
+          <div class="con-1">
+               <img src="./images/desktop-image-hero-1.jpg" alt="image-hero" id="main-image">
+               <div class="nav-bar">
+                    <!-- Drop-down Menu -->
+                    <ul class="dropbar">
+                         <!-- Close Menu Icon -->
+          <img src="./images/icon-close.svg" onclick="closeNav()" alt="Close Menu" class="close" id="close" />
+                         <li><a href="#">home</a></li>
+                         <li><a href="#">shop</a></li>
+                         <li><a href="#">about</a></li>
+                         <li><a href="#">contact</a></li>
+                    </ul>
+
+
+
+                    <!-- Hambuger Menu -->
+                    <img src="./images/icon-hamburger.svg" onclick="openNav()" alt="hamburger-menu" class="hamburger-menu" id="hamburger-menu">
+                    <h2 class="title">room</h2>
+                    <ul class="nav">
+                         <li><a href="#">home</a></li>
+                         <li><a href="#">shop</a></li>
+                         <li><a href="#">about</a></li>
+                         <li><a href="#">contact</a></li>
+                    </ul>
+               </div>
+               <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+          </div>
+          <div class="con-2">
+               <div class="content">
+                    <h2 class="header" id="header">Discover innovative ways to decorate</h2>
+                    <p class="para" id="para">
+                         We provide unmatched quality, comfort and style for property owners across the country.
+                         Our experts combine form and function in bringing your vision to life. Create a room in your own style 
+                         with our collection and make your property a reflection of you and what you love.
+                    </p>
+                    <div class="shop-link"><span>SHOP NOW</span> <img src="./images/icon-arrow.svg" alt="arrow-icon"></div>
+               </div>
+               <img src="./images/icon-angle-left.svg" alt="prev-icon" class="prev" id="prevArrow">
+               <img src="./images/icon-angle-right.svg" alt="next-icon" class="next" id="nextArrow">
+          </div>
+          <div class="con-3">
+               <img src="./images/image-about-dark.jpg" alt="" id="img-2">
+          </div>
+          <div class="con-4">
+
+               <h2 class="second-header">ABOUT OUR FURNITURE</h2>
+               <p class="second-para">Our multifunctional collection blends design and function to suit your individual taste. 
+                    Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. 
+                    Find the furniture pieces you need, from traditional to contemporary
+                     styles or anything in between. Product specialists are available to help you create your dream space.</p>
+          </div>
+          <div class="con-5">
+               <img src="./images/image-about-light.jpg" alt="" id="img-3">
+          </div>
+          
+     </div>
+     
+     <script src="script.js"></script>
+</body>
+</html>

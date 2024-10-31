@@ -1,0 +1,614 @@
+*{
+     margin: 0;
+     padding:0;
+     box-sizing: border-box;
+}
+
+:root{
+     --Dark-Gray: hsl(0, 0%, 63%);
+     --Black: hsl(0, 0%, 0%);
+     --White: hsl(0, 0%, 100%);
+     --Very-Dark-Gray: hsl(0, 0%, 27%);
+}
+
+body{
+     font-family: 'League Spartan';
+}
+
+.container{
+     display:flex;
+     flex-flow:row wrap;
+
+}
+
+
+
+/* ------------------CON 1-------------------- */
+.con-1{
+     position:relative;
+     width:60%; 
+     height: 80vh;
+
+}
+#main-image{
+     width:100%;
+     height: 80vh;
+}
+.nav-bar{
+     position:absolute;
+     top:0;
+     display: flex;
+     align-items: center;
+     color:var(--White);
+     margin-top: 3rem;
+     margin-left: 4rem;
+}
+.hamburger-menu{
+     display:none;
+}
+
+.title{
+     margin-right: 1rem;
+     font-weight: 500;
+     font-size: 30px;
+}
+
+.nav li{
+     display:inline-block;
+}
+.nav li a{
+     text-decoration:none;
+     color:var(--White);
+     margin-left:2rem;
+     padding-bottom: 5px;
+     font-size: 14px;
+     font-weight: 500;
+     /* transition: 0.5s ease; */
+}
+.nav li a:hover{
+     border-bottom: 2px solid var(--White);
+}
+
+
+/* --------------DROP DOWN--------------- */
+.dropbar{
+     position:fixed;
+     top:0;
+     left:0;
+     height:100px;
+     width:100%;
+     z-index:1;
+     background-color:var(--White);
+     -webkit-backdrop-filter: blur(10px);
+             backdrop-filter: blur(10px);
+     display: none; 
+     flex-direction: row; 
+     align-items: center;
+     
+     
+     
+
+}
+.dropbar li{
+     width:100%;
+     list-style: none;
+
+}
+.dropbar a{
+     width:100%;
+     text-decoration:none;
+     color: var(--Black);
+     font-weight: 600;
+     
+
+}
+
+.close{
+     cursor:pointer;
+     margin: 0 4rem;
+}
+
+ /* Overlay */
+ .overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+     visibility: hidden;
+     opacity: 0;
+     transition: visibility 0.3s, opacity 0.3s;
+ }
+ .overlay.show {
+     visibility: visible;
+     opacity: 1;
+ }
+
+ .no-scroll {
+    overflow: hidden; /* Prevents scrolling */
+    height: 100vh;   /* Ensures the body takes up the full height */
+}
+
+/* ----------------CON 2----------------- */
+.con-2{
+     width:40%; 
+      height:80vh;
+      position:relative;
+}
+
+.content{
+     width:75%;
+     margin:5rem auto;
+     
+}
+.header{
+     font-size: 3rem;
+     font-weight: 500;
+     text-wrap: wrap;
+}
+.para{
+     font-weight: 300;
+     text-wrap: wrap;
+     color:var(--Dark-Gray);
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+     word-spacing:2px;
+     line-height: 25px;
+     
+}
+
+
+.shop-link{
+     margin-top: 2rem;
+     transition: 0.5s ease;
+}
+.shop-link:hover{
+     cursor:pointer;
+   opacity:0.5;
+}
+
+
+.shop-link span{
+    letter-spacing: 12px;
+    margin-right:1rem;
+    vertical-align: middle;
+    font-weight: 500;
+}
+.shop-link img{
+     vertical-align: middle;
+}
+
+.prev, .next{
+     cursor: pointer;
+     position:absolute;
+     bottom:0;
+     padding: 25px 27px;
+     background-color: var(--Black);
+}
+.next{
+     position: absolute;
+     left: 67px;
+}
+
+.prev:hover,
+.next:hover{
+     background-color: var(--Very-Dark-Gray);
+}
+
+/* ------------------CON 3-------------------- */
+.con-3{
+     width:30%;
+     height:40vh;
+     
+}
+#img-2{
+     width:100%;
+     height:40vh;
+}
+
+/* ------------------CON 4-------------------- */
+.con-4{
+     width:40%;
+     height:40vh;
+}
+.second-header{
+     font-size: 16px;
+     width:85%;
+     margin: 3rem auto 1rem auto;
+     word-spacing: 5px;
+     letter-spacing: 5px;
+}
+.second-para{
+     width:85%;
+     margin: auto;
+     font-weight: 300;
+     text-wrap: wrap;
+     color:var(--Dark-Gray);
+     word-spacing:2px;
+     line-height: 25px;
+}
+
+/* ------------------CON 5-------------------- */
+.con-5{
+     width:30%;
+     height:40vh;
+     
+}
+#img-3{
+     width:100%;
+     height:40vh;
+}
+
+
+
+
+/* -------------------MEDIA QUERIES------------------- */
+@media (max-width: 1300px){
+     .content{
+          width:80%;
+          margin:3rem auto;
+          
+     }
+     .second-header{
+          font-size: 16px;
+          width:85%;
+          margin-top:1rem;
+          word-spacing: 5px;
+          letter-spacing: 5px;
+     }
+
+
+     
+}
+@media (max-width: 1200px){
+     .header{
+          font-size: 2rem;
+     }
+}
+
+@media (max-width: 1000px){
+     .second-para{
+          font-size: 14px;
+     }
+}
+@media (max-width: 900px){
+     .second-para{
+          line-height:20px;
+     }
+}
+@media (max-width: 800px){
+     body{
+          overflow-x: hidden;
+     }
+     .container{
+          display:flex;
+          flex-flow:column wrap;
+     
+     }
+     .con-1{
+          width:100%;
+          
+     }
+     .prev, .next{
+          position:absolute;
+          top:-25%;
+          
+          padding: 25px 27px;
+          background-color: var(--Black);
+     }
+
+     .prev{
+          position:absolute;
+          right:10%;
+     }
+     .next{
+          position: absolute;
+          left: 90%;
+     }
+     .con-2{
+          width:100%;
+          height: 50vh;
+     }
+     .con-3{
+          width:100%;
+          height:60vh;
+
+     }
+     #img-2{
+          height:60vh;
+     }
+     .con-4{
+          width:100%;
+     }
+     .second-header{
+          margin-top: 2rem;
+     }
+     .second-para{
+          font-size: 16px;
+          line-height: 25px;
+     }
+     .con-5{
+          width:100%;
+          height:60vh;
+     }
+     #img-3{
+          height:60vh;
+     }
+}
+
+@media (max-width: 600px){
+     
+     .hamburger-menu{
+          display:inline-block;
+          cursor:pointer;
+     }
+
+     .title{
+          margin-left: 10rem;
+     }
+
+     .nav li{
+          display: none;
+     }
+
+     .prev{
+          position:absolute;
+          right:13%;
+     }
+     .next{
+          position: absolute;
+          left: 87%;
+     }
+}
+
+@media (max-width: 500px){
+
+     .con-1{
+          height: 60vh;
+     }
+     #main-image{
+          height: 100%;
+     }
+
+     .title{
+          margin-left: 8rem;
+     }
+     .content{
+          margin:2rem auto;
+          
+     }
+
+
+     .prev, .next{
+          position:absolute;
+          top:-24%;
+     }
+
+     .prev{
+          position:absolute;
+          right:14%;
+     }
+     .next{
+          position: absolute;
+          left: 86%;
+     }
+
+     .second-para{
+          margin-bottom: 1rem;
+     }
+}
+
+@media (max-width: 450px){
+     .hamburger-menu{
+          margin-left: -1rem;
+     }
+     .title{
+          margin-left: 7.5rem;
+     }
+     .con-1{
+          height: 45vh;
+     }
+     #main-image{
+          height: 100%;
+     }
+     .con-2{
+          height:40vh;
+     }
+     .con-3{
+          height:40vh;
+     }
+     #img-2{
+          height: 100%;
+     }
+     .con-4{
+          height: 30vh;
+     }
+     .con-5{
+          height: 40vh;
+     }
+     #img-3{
+          height: 100%;
+     }
+
+
+     .prev, .next{
+          position:absolute;
+          top:-15%;
+          padding: 15px 25px;
+     }
+
+     .prev{
+          position:absolute;
+          right:15.5%;
+     }
+     .next{
+          position: absolute;
+          left: 84%;
+     }
+}
+@media (max-width: 420px){
+     .title{
+          margin-left: 7rem;
+     }
+     .close{
+          margin:0 3rem 0 3rem;
+     }
+}
+@media (max-width: 400px){
+     .hamburger-menu{
+          margin-left: -2rem;
+     }
+     .close{
+          margin:0 3rem 0 2rem;
+     }
+     .title{
+          margin-left: 7rem;
+     }
+     .prev, .next{
+          position:absolute;
+          top:-16%;
+          padding: 15px 25px;
+     }
+
+     .prev{
+          position:absolute;
+          right:18%;
+     }
+     .next{
+          position: absolute;
+          left: 82%;
+     }
+     .para{
+          line-height: 23px;
+     }
+     .second-header{
+          margin-top: 1rem;
+     }
+}
+
+@media (max-width: 380px){
+     .title{
+          margin-left: 6.5rem;
+     }
+     .hamburger-menu{
+          margin-left: -2rem;
+     }
+     .con-1{
+          height: 50vh;
+     }
+     #main-image{
+          height: 100%;
+     }
+     .nav-bar{
+          margin-top: 2rem;
+     }
+     .dropbar{
+          height: 80px;
+     }
+     .close{
+          margin:0 3rem 0 2rem;
+     }
+
+     .prev{
+          position:absolute;
+          right:17%;
+     }
+     .next{
+          position: absolute;
+          left: 83%;
+     }
+
+     .con-2{
+          height: 50vh;
+     }
+     
+     .shop-link{
+          margin-top: 1rem;
+     }
+     .con-4{
+          height: 45vh;
+     }
+     .second-header{
+          margin-top: 2rem;
+     }
+}
+@media (max-width: 360px){
+
+     .hamburger-menu{
+          margin-left: -3rem;
+     }
+     .close{
+          margin:0 3rem 0 1rem;
+     }
+     .prev, .next{
+          position:absolute;
+          top:-12%;
+          padding: 10px 20px;
+     }
+     .prev{
+          position:absolute;
+          right:15%;
+     }
+     .next{
+          position: absolute;
+          left: 85%;
+     }
+}
+
+@media (max-width: 350px){
+     
+     .con-1{
+          height: 40vh;
+     }
+     #main-image{
+          height: 100%;
+     }
+     .title{
+          margin-left: 5.5rem;
+     }
+
+     .content{
+          margin:3rem auto;
+          
+     }
+     .shop-link{
+          margin-top: 2rem;
+     }
+     .con-3{
+          height:30vh;
+     }
+     #img-2{
+          height: 100%;
+     }
+
+     .con-4{
+          height: 40vh;
+     }
+     .second-header{
+          margin-top: 3rem;
+     }
+     .second-para{
+          margin-top: 1.5rem;
+     }
+     .con-5{
+          height:30vh;
+     }
+     #img-3{
+          height: 100%;
+     }
+
+     .prev, .next{
+          position:absolute;
+          top:-10%;
+          padding: 10px 20px;
+     }
+     .prev{
+          position:absolute;
+          right:15.7%;
+     }
+     .next{
+          position: absolute;
+          left: 84.3%;
+     }
+}
