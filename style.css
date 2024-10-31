@@ -457,7 +457,7 @@ body{
      }
      .prev, .next{
           position:absolute;
-          top:-15%;
+          top:-16%;
           padding: 15px 25px;
      }
 }
@@ -476,7 +476,7 @@ body{
      }
      .prev, .next{
           position:absolute;
-          top:-12%;
+          top:-10%;
           padding: 15px 25px;
      }
      .prev{
