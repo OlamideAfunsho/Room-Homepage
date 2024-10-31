@@ -400,9 +400,7 @@ body{
 }
 
 @media (max-width: 450px){
-     .nav-bar{
-          margin-top: 2rem;
-     }
+     
      .hamburger-menu{
           margin-left: -1rem;
      }
@@ -437,7 +435,7 @@ body{
 
      .prev, .next{
           position:absolute;
-          top:-12%;
+          top:-15%;
           padding: 15px 25px;
      }
 
@@ -459,6 +457,9 @@ body{
      }
 }
 @media (max-width: 400px){
+     .nav-bar{
+          margin-top: 1.5rem;
+     }
      .hamburger-menu{
           margin-left: -2rem;
      }
@@ -470,7 +471,7 @@ body{
      }
      .prev, .next{
           position:absolute;
-          top:-16%;
+          top:-14%;
           padding: 15px 25px;
      }
 
@@ -486,7 +487,7 @@ body{
           line-height: 23px;
      }
      .second-header{
-          margin-top: 1rem;
+          margin-top: 2rem;
      }
 }
 
