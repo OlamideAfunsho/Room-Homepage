@@ -489,7 +489,7 @@ body{
 
 @media (max-width: 380px){
      .title{
-          color: red;
+          
           margin-left: 6.5rem;
      }
      .hamburger-menu{
@@ -559,7 +559,9 @@ body{
 }
 
 @media (max-width: 350px){
-     
+     .title{
+          color: red;
+     }
      .con-1{
           height: 40vh;
      }
