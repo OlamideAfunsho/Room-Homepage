@@ -469,11 +469,6 @@ body{
      .title{
           margin-left: 7rem;
      }
-     .prev, .next{
-          position:absolute;
-          top:-16%;
-          padding: 15px 25px;
-     }
 
      .prev{
           position:absolute;
