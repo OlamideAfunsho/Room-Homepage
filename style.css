@@ -451,13 +451,21 @@ body{
 @media (max-width: 420px){
      .title{
           margin-left: 7rem;
-          color: red;
+          
      }
      .close{
           margin:0 3rem 0 3rem;
      }
+     .prev, .next{
+          position:absolute;
+          top:-14%;
+          padding: 15px 25px;
+     }
 }
 @media (max-width: 400px){
+     .title{
+          color: red;
+     }
      .nav-bar{
           margin-top: 2rem;
      }
