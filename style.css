@@ -469,6 +469,11 @@ body{
      .title{
           margin-left: 7rem;
      }
+     .prev, .next{
+          position: absolute;
+          top: -16%;
+          padding: 15px 25px;
+     }
      .prev{
           position:absolute;
           right:18%;
@@ -509,12 +514,6 @@ body{
      .close{
           margin:0 3rem 0 2rem;
      }
-
-     .prev, .next{
-          position:absolute;
-          top:-16%;
-          padding: 15px 25px;
-     }
      .prev{
           position:absolute;
           right:17%;
@@ -545,7 +544,13 @@ body{
      .close{
           margin:0 3rem 0 1rem;
      }
-     
+
+
+     .prev, .next{
+          position: absolute;
+          top: -12%;
+          padding: 10px 20px;
+     }
      .prev{
           position:absolute;
           right:15%;
