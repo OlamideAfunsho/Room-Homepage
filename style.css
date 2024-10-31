@@ -489,6 +489,7 @@ body{
 
 @media (max-width: 380px){
      .title{
+          color: red;
           margin-left: 6.5rem;
      }
      .hamburger-menu{
@@ -512,7 +513,7 @@ body{
 
      .prev, .next{
           position:absolute;
-          top:-14.5%;
+          top:-16%;
           padding: 15px 25px;
      }
      .prev{
