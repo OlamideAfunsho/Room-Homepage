@@ -463,9 +463,6 @@ body{
      }
 }
 @media (max-width: 400px){
-     .title{
-          color: red;
-     }
      .nav-bar{
           margin-top: 2rem;
      }
@@ -478,7 +475,11 @@ body{
      .title{
           margin-left: 7rem;
      }
-
+     .prev, .next{
+          position:absolute;
+          top:-12%;
+          padding: 15px 25px;
+     }
      .prev{
           position:absolute;
           right:18%;
