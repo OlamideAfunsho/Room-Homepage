@@ -471,7 +471,7 @@ body{
      }
      .prev, .next{
           position:absolute;
-          top:-14%;
+          top:-12%;
           padding: 15px 25px;
      }
 
@@ -485,6 +485,7 @@ body{
      }
      .para{
           line-height: 23px;
+          margin-top: 2rem;
      }
      .second-header{
           margin-top: 2.5rem;
