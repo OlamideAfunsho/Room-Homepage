@@ -451,6 +451,7 @@ body{
 @media (max-width: 420px){
      .title{
           margin-left: 7rem;
+          color: red;
      }
      .close{
           margin:0 3rem 0 3rem;
@@ -540,9 +541,6 @@ body{
      }
 }
 @media (max-width: 360px){
-     .title{
-          color: red;
-     }
      .hamburger-menu{
           margin-left: -3rem;
      }
