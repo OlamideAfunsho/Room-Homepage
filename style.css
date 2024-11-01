@@ -312,11 +312,11 @@ body{
      }
      .con-3{
           width:100%;
-          height:60vh;
+          height:50vh;
 
      }
      #img-2{
-          height:60vh;
+          height:100%;
      }
      .con-4{
           width:100%;
@@ -330,10 +330,10 @@ body{
      }
      .con-5{
           width:100%;
-          height:60vh;
+          height:50vh;
      }
      #img-3{
-          height:60vh;
+          height:100%;
      }
 }
 
@@ -365,7 +365,7 @@ body{
 @media (max-width: 500px){
 
      .con-1{
-          height: 60vh;
+          height: 50vh;
      }
      #main-image{
           height: 100%;
